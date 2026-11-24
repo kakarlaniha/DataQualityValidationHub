@@ -79,7 +79,6 @@ with st.sidebar:
     st.markdown('<div class="sidebar-logo"><span class="dot"></span>DQ Validation Hub</div>', unsafe_allow_html=True)
     nav_options = [
         "🏠  Home",
-        "📈  Application Statistics",
         "🤖  AI DQ Orchestrator",
         "📋  Validation Report Generator",
         "🔍  Schema Validator",
@@ -90,6 +89,7 @@ with st.sidebar:
         "🔑  Keys Validator",
         "🎨  Colour Record Filter",
         "🔌  Connections",
+        "📈  Application Statistics",
     ]
 
     if "main_navigation" not in st.session_state:
@@ -99,7 +99,6 @@ with st.sidebar:
 
 pages = {
     "🏠  Home":                        Home,
-    "📈  Application Statistics":       AppStatistics,
     "🤖  AI DQ Orchestrator":          AIIntegration,
     "📋  Validation Report Generator": ValidationReportGenerator,
     "🔍  Schema Validator":            SchemaValidator,
@@ -110,6 +109,7 @@ pages = {
     "🔑  Keys Validator":              KeysValidator,
     "🎨  Colour Record Filter":        ColourFilter,
     "🔌  Connections":                 Connections,
+    "📈  Application Statistics":       AppStatistics,
 }
 
 pages[page].run()
